@@ -19,9 +19,9 @@ namespace lab6_bd
                 DB db = new DB();
                 release release = new release();
                 release.id_release = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                db.openConnection(); // открыть соединение
                 string commandText = "delete from `release` where idrelease=@release.id_release";
-                MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                db.openConnection(); // открыть соединение
+                using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
                 MySqlParameter Deleterelease = new MySqlParameter("@release.id_release", release.id_release);
                 Command.Parameters.Add(Deleterelease);
 
@@ -42,10 +42,10 @@ namespace lab6_bd
             {
                 broadcast broadcast = new broadcast();
                 broadcast.id_broadcast = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                DB db = new DB();
-                db.openConnection(); // открыть соединение
+                DB db = new DB();                
                 string commandText = "delete from broadcast where id_broadcast=@broadcast.id_broadcast";
-                MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                db.openConnection(); // открыть соединение
+                using  MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
                 MySqlParameter Deletebroadcast = new MySqlParameter("@broadcast.id_broadcast", broadcast.id_broadcast);
                 Command.Parameters.Add(Deletebroadcast);
                 
@@ -78,10 +78,11 @@ namespace lab6_bd
                 DB db = new DB();
                 {
                     // строка запроса, который надо будет выполнить
-                    string commandText = "INSERT INTO `release` (name, theme, id_broadcast, id_producer) VALUES(@release.Name,@release.Theme, @release.Id_broadcast, @release.Id_producer)";  
-                    MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                    string commandText = "INSERT INTO `release` (name, theme, id_broadcast, id_producer) VALUES(@release.Name,@release.Theme, @release.Id_broadcast, @release.Id_producer)";
                     db.openConnection(); // открыть соединение
-                                
+                   
+                    using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                          
 
                     MySqlParameter nameParam = new MySqlParameter("@release.Name", release.Name); ;
                     Command.Parameters.Add(nameParam);
@@ -94,10 +95,9 @@ namespace lab6_bd
 
                     MySqlParameter id_producerParam = new MySqlParameter("@release.Id_producer", release.Id_producer);
                     Command.Parameters.Add(id_producerParam);
-                
-                    Command.ExecuteNonQuery(); // выполнить запрос
                     
                     dataGridView1.Rows.Add(release.Name, release.Theme, release.Id_broadcast, release.Id_producer);
+                    Command.ExecuteNonQuery(); // выполнить запрос          
                     db.closeConnection(); // закрыть соединение
 
                 }
@@ -113,8 +113,8 @@ namespace lab6_bd
                 {
                     // строка запроса, который надо будет выполнить
                     string commandText = "INSERT INTO broadcast (name, description, year_of_creation) VALUES(@broadcast.Name,@broadcast.Description, @broadcast.Year_of_creation)";
-                    MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
                     db.openConnection(); // открыть соединение
+                    using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());                   
                                          // SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
 
                     MySqlParameter nameParam = new MySqlParameter("@broadcast.Name", broadcast.Name); ;
@@ -150,10 +150,10 @@ namespace lab6_bd
                     // строка запроса, который надо будет выполнить
                     db.openConnection(); // открыть соединение
                                          
-                    string commandText = @"UPDATE `release` SET name=@release.Name, Theme=@release.Theme, id_broadcast=@release.Id_broadcast, id_producer = @release.Id_producer where idrelease=@number";
+                    string commandText = "UPDATE `release` SET name=@release.Name, Theme=@release.Theme, id_broadcast=@release.Id_broadcast, id_producer = @release.Id_producer where idrelease=@number";
                     //Connect.Open(); // открыть соединение
 
-                    MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                   using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
                     
 
 
@@ -170,9 +170,9 @@ namespace lab6_bd
                     Command.Parameters.Add(id_producerParam);
                     MySqlParameter numberParam = new MySqlParameter("@number", number);
                     Command.Parameters.Add(numberParam);
-
-                    Command.ExecuteNonQuery(); // выполнить запрос
+                    
                     dataGridView1.Rows.Add(release.Name, release.Theme, release.Id_broadcast, release.Id_producer);
+                    Command.ExecuteNonQuery(); // выполнить запрос
                     db.closeConnection(); // закрыть соединение
 
                 }
@@ -187,11 +187,10 @@ namespace lab6_bd
                 DB db = new DB();
                 {
                     // строка запроса, который надо будет выполнить
-                    string commandText = @"UPDATE broadcast SET name=@broadcast.Name, description=@broadcast.Description, year_of_creation=@broadcast.Year_of_creation where Id_broadcast=@number";
-                    //Connect.Open(); // открыть соединение
-
-                    MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+                    string commandText = "UPDATE broadcast SET name=@broadcast.Name, description=@broadcast.Description, year_of_creation=@broadcast.Year_of_creation where Id_broadcast=@number";
                     db.openConnection(); // открыть соединение
+
+                    using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());                   
                                          // SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
 
                     MySqlParameter nameParam = new MySqlParameter("@broadcast.Name", broadcast.Name); ;
@@ -238,8 +237,9 @@ namespace lab6_bd
                 Column5.HeaderText = "Имя режиссера";
                 DB db = new DB();
                 db.openConnection();
-                MySqlCommand command = new MySqlCommand("SELECT idrelease,r.name,r.theme,b.name,p.full_name FROM `release` as r join broadcast as b on r.id_broadcast=b.id_broadcast join producer as p on p.id_producer=r.id_producer", db.GetConnection());
-                MySqlDataReader reader = command.ExecuteReader();
+                string commandText = "SELECT idrelease,r.name,r.theme,b.name,p.full_name FROM `release` as r join broadcast as b on r.id_broadcast=b.id_broadcast join producer as p on p.id_producer=r.id_producer";
+                using MySqlCommand command = new MySqlCommand(commandText, db.GetConnection());
+                using MySqlDataReader reader = command.ExecuteReader();
                 List<string[]> data = new List<string[]>();
 
                 while (reader.Read())
@@ -276,8 +276,9 @@ namespace lab6_bd
                 Column4.HeaderText = "Год создания";
                 DB db = new DB();
                 db.openConnection();
-                MySqlCommand command = new MySqlCommand("select id_broadcast,name,description,year_of_creation from broadcast", db.GetConnection());
-                MySqlDataReader reader = command.ExecuteReader();
+                string commandText = "select id_broadcast,name,description,year_of_creation from broadcast";
+                using MySqlCommand command = new MySqlCommand(commandText, db.GetConnection());
+                using MySqlDataReader reader = command.ExecuteReader();
                 List<string[]> data = new List<string[]>();
 
                 while (reader.Read())
@@ -323,7 +324,7 @@ namespace lab6_bd
             DB db = new DB();
             db.openConnection();
             string commandText = "select sum(a.profit) as profit from advertising as a join release_to_advertising as rta on rta.id_advertising = a.id_advertising join `release` as r on r.idrelease = rta.id_release join `schedule` as s on s.id_release = r.idrelease where s.broadcast_date between @start_date and @end_date";
-            MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+            using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
             MySqlParameter startParam = new MySqlParameter("@start_date", start_date); ;
             Command.Parameters.Add(startParam);
             MySqlParameter endParam = new MySqlParameter("@end_date", end_date);
@@ -338,7 +339,7 @@ namespace lab6_bd
             DB db = new DB();
             db.openConnection();
             string commandText = "select sum(rtu.`number`) as site_users from `user` as u join release_to_user as rtu on rtu.id_user = u.id_user join `release` as r on r.idrelease = rtu.id_release";
-            MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
+            using MySqlCommand Command = new MySqlCommand(commandText, db.GetConnection());
             textBox5.Text = Command.ExecuteScalar().ToString(); // выполнить запрос
             db.closeConnection();
         }
