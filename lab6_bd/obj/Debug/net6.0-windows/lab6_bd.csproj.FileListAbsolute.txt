@@ -1,0 +1,84 @@
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.AssemblyReference.cache
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Form1.resources
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.GenerateResource.cache
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.GeneratedMSBuildEditorConfig.editorconfig
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfoInputs.cache
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfo.cs
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CoreCompileInputs.cache
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.exe
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.deps.json
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.runtimeconfig.json
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.pdb
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.dll
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\refint\lab6_bd.dll
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.pdb
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.genruntimeconfig.cache
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\ref\lab6_bd.dll
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Properties.Resources.resources
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\Google.Protobuf.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\ZstdNet.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+I:\Лабы БД\lab 6\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.xml
+I:\Лабы БД\lab 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CopyComplete
+C:\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.exe
+C:\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.deps.json
+C:\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.runtimeconfig.json
+C:\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.pdb
+C:\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.xml
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.AssemblyReference.cache
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Form1.resources
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Properties.Resources.resources
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.GenerateResource.cache
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.GeneratedMSBuildEditorConfig.editorconfig
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfoInputs.cache
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfo.cs
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CoreCompileInputs.cache
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CopyComplete
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.dll
+C:\lab6_bd\obj\Debug\net6.0-windows\refint\lab6_bd.dll
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.pdb
+C:\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.genruntimeconfig.cache
+C:\lab6_bd\obj\Debug\net6.0-windows\ref\lab6_bd.dll
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.AssemblyReference.cache
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Form1.resources
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.Properties.Resources.resources
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.GenerateResource.cache
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.GeneratedMSBuildEditorConfig.editorconfig
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfoInputs.cache
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.AssemblyInfo.cs
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CoreCompileInputs.cache
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.dll
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\refint\lab6_bd.dll
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.pdb
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.exe
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.deps.json
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.runtimeconfig.json
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\lab6_bd.pdb
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\Google.Protobuf.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\ZstdNet.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+I:\Лабы БД\Лаб 6\lab6_bd\bin\Debug\net6.0-windows\MySql.Data.xml
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.csproj.CopyComplete
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\lab6_bd.genruntimeconfig.cache
+I:\Лабы БД\Лаб 6\lab6_bd\obj\Debug\net6.0-windows\ref\lab6_bd.dll
