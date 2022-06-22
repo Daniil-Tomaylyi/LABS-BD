@@ -96,7 +96,7 @@ namespace lab6_bd
                     MySqlParameter id_producerParam = new MySqlParameter("@release.Id_producer", release.Id_producer);
                     Command.Parameters.Add(id_producerParam);
                     
-                    dataGridView1.Rows.Add(release.Name, release.Theme, release.Id_broadcast, release.Id_producer);
+                    dataGridView1.Rows.Add(1,release.Name, release.Theme, release.Id_broadcast, release.Id_producer);
                     Command.ExecuteNonQuery(); // выполнить запрос          
                     db.closeConnection(); // закрыть соединение
 
@@ -125,7 +125,7 @@ namespace lab6_bd
 
                     MySqlParameter year_of_creationParam = new MySqlParameter("@broadcast.Year_of_creation", broadcast.Year_of_creation);
                     Command.Parameters.Add(year_of_creationParam);
-                    dataGridView1.Rows.Add(broadcast.Name, broadcast.Description, broadcast.Year_of_creation);
+                    dataGridView1.Rows.Add(1,broadcast.Name, broadcast.Description, broadcast.Year_of_creation);
                     Command.ExecuteNonQuery(); // выполнить запрос
                     db.closeConnection(); // закрыть соединение
 
@@ -140,10 +140,10 @@ namespace lab6_bd
                 
                 release release = new release();
                 int number = dataGridView1.CurrentRow.Index+1;
-                release.Name = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                release.Theme = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                release.broadcast = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                release.producer = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                release.Name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                release.Theme = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                release.broadcast = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                release.producer = dataGridView1.CurrentRow.Cells[4].Value.ToString();
        
                 DB db = new DB();
                 {
@@ -171,8 +171,11 @@ namespace lab6_bd
                     MySqlParameter numberParam = new MySqlParameter("@number", number);
                     Command.Parameters.Add(numberParam);
                     
-                    dataGridView1.Rows.Add(release.Name, release.Theme, release.Id_broadcast, release.Id_producer);
                     Command.ExecuteNonQuery(); // выполнить запрос
+                    dataGridView1.CurrentRow.Cells[1].Value = release.Name;
+                    dataGridView1.CurrentRow.Cells[2].Value = release.Theme;
+                    dataGridView1.CurrentRow.Cells[3].Value = release.broadcast;
+                    dataGridView1.CurrentRow.Cells[4].Value = release.producer;
                     db.closeConnection(); // закрыть соединение
 
                 }
@@ -181,9 +184,9 @@ namespace lab6_bd
             {
                 broadcast broadcast = new broadcast();
                 int number = dataGridView1.CurrentRow.Index+1;
-                broadcast.Name = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                broadcast.Description = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                broadcast.Year_of_creation= dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                broadcast.Name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                broadcast.Description = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                broadcast.Year_of_creation= dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 DB db = new DB();
                 {
                     // строка запроса, который надо будет выполнить
@@ -204,9 +207,10 @@ namespace lab6_bd
 
                     MySqlParameter numberParam = new MySqlParameter("@number", number);
                     Command.Parameters.Add(numberParam);
-
-                    dataGridView1.Rows.Add(broadcast.Name, broadcast.Description, broadcast.Year_of_creation);
                     Command.ExecuteNonQuery(); // выполнить запрос
+                    dataGridView1.CurrentRow.Cells[1].Value = broadcast.Name;
+                    dataGridView1.CurrentRow.Cells[2].Value = broadcast.Description;
+                    dataGridView1.CurrentRow.Cells[3].Value = broadcast.Year_of_creation;
                     db.closeConnection(); // закрыть соединение
                 }
             }
