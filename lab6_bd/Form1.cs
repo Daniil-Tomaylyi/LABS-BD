@@ -270,7 +270,7 @@ namespace lab6_bd
             else
             {
                 dataGridView1.Rows.Clear();
-                this.dataGridView1.Columns["Column1"].Visible = false;
+                this.dataGridView1.Columns["Column1"].Visible = true;
                 this.dataGridView1.Columns["Column5"].Visible = false;
                 label2.Text = "Описание";
                 label3.Text = "Год создания";
