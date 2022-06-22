@@ -227,7 +227,7 @@ namespace lab6_bd
             {
                 dataGridView1.Rows.Clear();
                 this.dataGridView1.Columns["Column1"].Visible = false;
-                this.dataGridView1.Columns["Column4"].Visible = true;
+                this.dataGridView1.Columns["Column5"].Visible = true;
                 label1.Visible = true;
                 label4.Visible = true;
                 textBox4.Visible = true;
